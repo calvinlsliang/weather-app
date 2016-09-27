@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="main_activity">
+        <item name="android:padding">@dimen/main_activity_padding</item>
+    </style>
+
+    <style name="conditions_title">
+        <item name="android:paddingBottom">@dimen/conditions_title_padding_bottom</item>
+        <item name="android:textSize">@dimen/conditions_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="conditions">
+        <item name="android:textSize">@dimen/conditions_text_size</item>
+    </style>
+
+    <style name="conditions_value" parent="conditions">
+        <item name="android:paddingLeft">@dimen/conditions_values_padding_left</item>
+    </style>
+
+    <style name="conditions_cloudiness_image">
+        <item name="android:layout_marginLeft">@dimen/conditions_values_padding_left</item>
+    </style>
+
+    <style name="conditions_view">
+        <item name="android:paddingBottom">@dimen/conditions_view_padding_bottom</item>
+    </style>
+
+    <style name="stdev_button">
+        <item name="android:layout_marginBottom">@dimen/stdev_button_margin_bottom</item>
+    </style>
+
+    <style name="stdev_value">
+        <item name="android:textSize">@dimen/stdev_value_text_size</item>
+    </style>
+
+    <style name="no_conditions">
+        <item name="android:textSize">@dimen/conditions_text_size</item>
+        <item name="android:paddingBottom">@dimen/conditions_view_padding_bottom</item>
+    </style>
+
+    <style name="conditions_progress" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:paddingBottom">@dimen/conditions_view_padding_bottom</item>
+    </style>
+
+</resources>

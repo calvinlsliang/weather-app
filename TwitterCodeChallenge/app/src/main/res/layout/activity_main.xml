@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/conditions_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_conditions"/>
+
+    <ProgressBar
+        android:id="@+id/conditions_progress"
+        style="@style/conditions_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+    <com.twitter.challenge.view.WeatherConditionsLayout
+        android:id="@+id/current_conditions"
+        style="@style/conditions_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/no_current_conditions"
+        style="@style/no_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/no_conditions"
+        tools:text="No weather conditions found!"/>
+
+    <Button
+        android:id="@+id/stdev_button"
+        style="@style/stdev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fetch_stdev"/>
+
+    <ProgressBar
+        android:id="@+id/stdev_progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/stdev"
+        style="@style/stdev_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="gone"
+        tools:text="1"/>
+
+    <TextView
+        android:id="@+id/no_stdev"
+        style="@style/no_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/no_stdev"
+        tools:text="No standard deviation found!"/>
+
+</LinearLayout>

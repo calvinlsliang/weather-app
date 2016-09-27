@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/temperature"
+        style="@style/conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_conditions"
+        tools:text="Temperature: 14 °C / 39 °F"/>
+
+    <TextView
+        android:id="@+id/wind_speed"
+        style="@style/conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperature"
+        tools:text="Wind speed: 0.29 m/s"/>
+
+    <TextView
+        android:id="@+id/cloudiness"
+        style="@style/conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wind_speed"
+        tools:text="Cloudiness: 51%"/>
+
+    <ImageView
+        android:id="@+id/cloudiness_image"
+        style="@style/conditions_cloudiness_image"
+        android:layout_width="@dimen/conditions_image_size"
+        android:layout_height="@dimen/conditions_image_size"
+        android:layout_below="@id/wind_speed"
+        android:layout_toRightOf="@id/cloudiness"
+        android:visibility="gone"
+        android:src="@mipmap/ic_launcher"
+        tools:visibility="visible"/>
+
+</RelativeLayout>
