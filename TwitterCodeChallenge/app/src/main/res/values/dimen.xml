@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_activity_padding">20dp</dimen>
+
+    <dimen name="conditions_title_padding_bottom">16dp</dimen>
+    <dimen name="conditions_title_text_size">24sp</dimen>
+
+    <dimen name="conditions_text_size">16sp</dimen>
+    <dimen name="conditions_values_padding_left">8dp</dimen>
+    <dimen name="conditions_image_size">20dp</dimen>
+
+    <dimen name="conditions_view_padding_bottom">16dp</dimen>
+
+    <dimen name="stdev_button_margin_bottom">16dp</dimen>
+
+    <dimen name="stdev_value_text_size">16sp</dimen>
+</resources>

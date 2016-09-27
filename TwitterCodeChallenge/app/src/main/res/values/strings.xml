@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tweather</string>
+
+    <string name="temperature">Temperature: %1$f °C / %2$f °F</string>
+    <string name="wind_speed">Wind speed: %1$f m/s</string>
+    <string name="cloudiness">Cloudiness: %1$f %%</string>
+    <string name="stdev">Standard deviation: %1f</string>
+
+    <string name="current_conditions">Current conditions</string>
+    <string name="fetch_stdev">FETCH STDEV</string>
+    <string name="no_conditions">No weather conditions found!</string>
+    <string name="no_stdev">No standard deviation found!</string>
+</resources>
